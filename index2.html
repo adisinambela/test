@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+    <h2>Input New Car</h2>
+
+    <div class="container">
+        <!-- <form action="/action_page.php"> -->
+        <div class="row">
+            <div class="col-25">
+                <label for="No. Polisi">No. Polisi*</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="nopolisi" name="nopolisi">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Nama Mobil">Nama Mobil*</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="namamobil" name="namamobil">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Warna Mobil">Warna Mobil*</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="warnamobil" name="warnamobil">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Foto Mobil">Foto Mobil*</label>
+            </div>
+            <div class="col-75">
+                <input type="file" id="myFile">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Tahun Pembelian*</label>
+            </div>
+            <div class="col-75">
+                <select id="tahun" name="tahun">
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="No. VIN">No. VIN*</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="novin" name="novin">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="masaberlakurego">Masa Berlaku Rego*</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="masaberlakurego" name="masaberlakurego">
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="No. VIN">Jatuh Tempo Servis*</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="jatuhtemposervis" name="jatuhtemposervis">
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="keterangan">Keterangan*</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="keterangan" name="keterangan" style="height:80px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                    </form>
+                </div>
+
+</body>
+
+</html>
