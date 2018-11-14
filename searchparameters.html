@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h2>KJRI Sydney</h2>
+    <p>Fleet Management System</p>
+
+</head>
+
+<body>
+    <style>
+        <style>body {
+            margin: 0;
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.topnav li {
+            float: left;
+        }
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        /* ul.topnav li a.active {
+            background-color: #4CAF50;
+        } */
+
+        ul.topnav li.right {
+            float: right;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <ul class="topnav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="inuse.html">In Use</a></li>
+            <li><a href="inputcar.html">Input Car</a></li>
+            <li><a href="manageuser.html">Manage User</a></li>
+            <li><a href="createuser.html">Create User</a></li>
+            <li><a href="searchparameters.html">Report</a></li>
+            <li><a href="logout.html">Logout</a></li>
+
+        </ul>
+
+
+    </body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+    <h2>Search Parameters</h2>
+
+    <div class="container">
+        <!-- <form action="/action_page.php"> -->
+        <!-- <div class="row">
+            <div class="col-25">
+                <label for="No. Polisi">No. Polisi*</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="nopolisi" name="nopolisi">
+            </div>
+        </div> -->
+        <!-- <div class="row">
+            <div class="col-25">
+                <label for="Nama Mobil">Nama Mobil*</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="namamobil" name="namamobil">
+            </div>
+        </div> -->
+        <!-- <div class="row">
+            <div class="col-25">
+                <label for="Warna Mobil">Warna Mobil*</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="warnamobil" name="warnamobil">
+            </div>
+        </div> -->
+        <!-- <div class="row">
+            <div class="col-25">
+                <label for="Foto Mobil">Foto Mobil*</label>
+            </div>
+            <div class="col-75">
+                <input type="file" id="myFile">
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Jenis Mobil</label>
+            </div>
+            <div class="col-75">
+                <select id="merk mobil" name="merek mobil">
+                    <option value="All">All</option>
+                    <option value="CC 2902 (MARCEDES E500)">CC 2902 (MARCEDES E500)</option>
+                    <option value="CC 2190 (MARCEDES S320)">CC 2190 (MARCEDES S320)</option>
+                    <option value="CC 2805 (TARAGO)">CC 2805 (TARAGO)</option>
+                    <option value="CC 2601 (COMMUTER)">CC 2601 (COMMUTER)</option>
+                    <option value="CC 2603 (CARAVELLE)">CC 2603 (CARAVELLE)</option>
+                    <option value="CC 2593 (LEXUS ES300H">CC 2593 (LEXUS ES300H)</option>
+                    <option value="CC 2609 (MARCEDES C250">CC 2609 (MARCEDES C250)</option>
+                    <option value="CC1234 (MARCEDES BENZ HUV)">CC1234 (MARCEDES BENZ HUV)</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Driver</label>
+                </div>
+                <div class="col-75">
+                    <select id="nama" name="nama">
+                        <option value="nama">All</option>
+                        <option value="admin">admin</option>
+                        <option value="Dmitri P. Sinambela">Dmitri P. Sinambela</option>
+                        <option value="Akbar Makarti">Akbar Makarti</option>
+                        <option value="Charles M. Sihombing">Charles M. Sihombing</option>
+                        <option value="Riza Wirianata">Riza Wirianata</option>
+                        <option value="Hans Sitorus">Hans Sitorus</option>
+                        <option value="Aris Setyoko">Aris Setyoko</option>
+                        <option value="Aria Taufik">Aria Taufik</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Tanggal Pemakaian">Tanggal Pemakaian</label>
+                    </div>
+                    from <input type="date" name="day"> to <input type="date" name="day">
+                    <!-- <div class="col-75">
+                        <input type="text" id="tanggal pemakaian" name="tanggal pemakaian"> -->
+                </div>
+            </div>
+            <p>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+                </form>
+            </p>
+        </div>
+
+</body>
+
+</html>
